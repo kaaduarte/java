@@ -7,3 +7,4 @@ let posY = 50;
 
 const moveSpeed = 10;
 const originalBackgroundColor = 'rgb(103, 147, 197)'; // Cor original de fundo //
+
