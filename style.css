@@ -29,7 +29,7 @@ body {
     background-color: rgb(103, 147, 197);
 }
 
-.small.circle {
+.small-circle {
     position: absolute;
     width: 30px;
     height: 30px;
