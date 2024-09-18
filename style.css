@@ -28,3 +28,12 @@ body {
     height: 50%;
     background-color: rgb(103, 147, 197);
 }
+
+.small.circle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
