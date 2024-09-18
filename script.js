@@ -24,12 +24,20 @@ document.addEventListener('keydown', (event) => {
             if (posX < window.innerWidth - circle.offsetHeight) posX += moveSpeed;
             break;
     }
-updateCirclePosition();
+    updateCirclePosition();
 });
 
 // Função que atualiza a posição do círculo //
-function updateCirclePosition () {
+function updateCirclePosition() {
     circle.style.left = `${posX}px`;
     circle.style.top = `${posY}px`;
 }
 
+// Função criar quadrados //
+function createSquares()
+{
+    clearShapes();
+    gameArea.style.backgroundColor = rgb(102, 129, 102);
+
+    for
+}
