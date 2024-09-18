@@ -34,7 +34,8 @@ function updateCirclePosition() {
 }
 
 // Função criar quadrados //
-function createSquares() {
+function createSquares()
+ {
     clearShapes();
     gameArea.style.backgroundColor = rgb(102, 129, 102);
 
