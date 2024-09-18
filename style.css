@@ -22,3 +22,9 @@ body {
     top: 50px;
 }
 
+.square {
+    position: absolute;
+    width: 50px;
+    height: 50%;
+    background-color: rgb(103, 147, 197);
+}
