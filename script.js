@@ -34,8 +34,7 @@ function updateCirclePosition() {
 }
 
 // Função criar quadrados //
-function createSquares()
- {
+function createSquares() {
     clearShapes();
     gameArea.style.backgroundColor = rgb(102, 129, 102);
 
@@ -54,10 +53,16 @@ function createCircles() {
     gameArea.style.backgroundColor = 'green';
 
     for (let i = 0; i < 5; i++) {
-const smallCircle = document.createElement('div');
-smallCircle.classList.add('samll.circle');
-smallCircle.style.left = `${Math.random() * (window.innerWidth - 30)}px`;
-smallCircle.style.top = `${Math.random () * (window.innerHeight - 30)}px`;
-gameArea.appendChild(smallCircle);
+        const smallCircle = document.createElement('div');
+        smallCircle.classList.add('samll.circle');
+        smallCircle.style.left = `${Math.random() * (window.innerWidth - 30)}px`;
+        smallCircle.style.top = `${Math.random() * (window.innerHeight - 30)}px`;
+        gameArea.appendChild(smallCircle);
     }
+}
+
+// Função para limpar as formas existentes //
+function clearShapes() {
+    const shapes = document.querySelectorAll('.square, .small-circle');
+    shapes.forEach(shape => shape.remove());
 }
