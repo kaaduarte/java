@@ -36,7 +36,7 @@ function updateCirclePosition() {
 // Função criar quadrados //
 function createSquares() {
     clearShapes();
-    gameArea.style.backgroundColor = rgb(102, 129, 102);
+    gameArea.style.backgroundColor = 'rgb(102, 129, 102)';
 
     for (let i = 0; i < 4; i++) {
         const square = document.createElement('div');

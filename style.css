@@ -25,7 +25,7 @@ body {
 .square {
     position: absolute;
     width: 50px;
-    height: 50%;
+    height: 50px;
     background-color: rgb(197, 103, 169);
 }
 
