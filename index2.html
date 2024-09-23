@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function exemploVar() {
+            var mensagem = "Olá, mundo!";
+            if (true) {
+                var mensagem = "Dentro do bloco!";
+                console.log(mensagem); // Saída: "Dentro do bloco!"
+            }
+            console.log(mensagem); // Saída: "Dentro do bloco!"
+        }
+        exemploVar();
+
+        function exemploLetConst() {
+            let saudacao = "Olá";
+            const numero = 42;
+
+            if (true) {
+                let saudacao = "Oi!";
+                const numero = 99;
+                console.log(saudacao); // Saída: "Oi"
+                console.log(numero); // Saída: 99
+            }
+            console.log(saudacao); // Saída "olá!"
+            console.log(numero); // Saída: 42
+        }
+        exemploLetConst();
+
+
+
+        let nome = "João";
+        console.log(nome)
+        let saudacao = 'Olá, como você está?';
+        console.log(saudacao)
+        let mensagem = `Oi, ${nome}! Bem-vindo ao JavaScript.`; // Template string
+        console.log(mensagem)
+
+        let idade = 25;    // Número inteiro
+        let preco = 19.99;      // Número decimal (ponto flutuante)
+        console.log(idade)
+        console.log(preco)
+
+        let estaChovendo = false;
+        let maiorDeIdade = true;
+
+        console.log(estaChovendo);
+        console.log(maiorDeIdade);
+
+        let idades = 20;
+
+        if (maiorDeIdade) {
+            console.log("Maior de idade!");
+        } else {
+            console.log("Menor de idade");
+        }
+
+        let carro = null;  // O carro não tem valor, ou seja, está "vazio"
+        console.log(carro);
+
+        let nomes;
+        console.log(nomes);   // undefined, pois a variável não foi inicializada
+
+        let a = 10; // tipo primitivo
+        let b = a; // b recebe o valor de a (10)
+
+        a = 20; // altera apenas a
+        console.log(a);  // 20
+        console.log(b);  // 10 (b continua sendo 10)
+
+        let obj1 = { nome: "Carlos" }; // tipo de referencia
+        let obj2 = obj1; // obj2 referência o mesmo objeto que obj1
+
+        obj1.nome = "Ana"; // altera o nome dentro do objeto
+        console.log(obj1.nome); // "Ana"
+        console.log(obj2.nome); // "Ana" (obj2 tambmém reflete a mudança)
+
+        let pessoa =
+        {
+            nome: "Joao",
+            idade: 30,
+            profissao: "Desenvolvedor"
+        };
+
+        // Acessando propriedades
+        console.log(pessoa.nome); //"João"
+        console.log(pessoa["idade"]); //30
+
+        //Modificando propriedades
+        pessoa.profissao = "Designer";
+        console.log(pessoa.profissao); // "Designer"
+
+        pessoa["profissao"] = "Programador!!"
+        console.log(pessoa.profissao)
+
+        // Adicionando novas propriedades
+        pessoa.cidade = "Rio de Janeiro";
+        console.log(pessoa.cidade); // "Rio de Janeiro"
+
+        console.log(pessoa);
+
+let frutas = ["maçã", "banana", "laranja"];
+
+ // Acessando elementos
+ console.log(frutas[0]); // "maçã"
+ console.log(frutas[2]);  //"Laranja"
+
+ // Modificando elementos
+ frutas[1] = "uva";
+ console.log(frutas); // ["Maçã", "uva", "laranja"]
+
+ //Adicionando elementos
+ frutas.push("kiwi");
+ console.log(frutas); // ["maçã", "uva", "laranja", "kiwi"]
+
+ // Iterando sobre um array
+ for (let listinha of frutas) {
+    console.log(listinha);
+ }
+
+    </script>
+</body>
+
+</html>
