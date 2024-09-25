@@ -41,39 +41,62 @@
             marca: "Toyota",
             modelo: "Corolla",
             ano: 2020,
-// Método para exibir informações do carro
-exibirInfo: function () {
-    return`${this.marca} ${this.modelo} - Ano: ${this.ano}`;
-}
+            // Método para exibir informações do carro
+            exibirInfo: function () {
+                return `${this.marca} ${this.modelo} - Ano: ${this.ano}`;
+            }
         };
 
         //Chamando o método
         console.log(carro.exibirInfo()); // "Toyota Corolla - Ano:2020"
 
-let calculadora = 
-{
-    somar: function (a, b)
-    {
-        return a + b;
-    },
-    subtrair: function (a, b)
-    {
-        return a - b;
-    },
-    multiplicar: function(a, b)
-    {
-        return a * b;
-    },
-    
-};
+        let calculadora =
+        {
+            somar: function (a, b) {
+                return a + b;
+            },
+            subtrair: function (a, b) {
+                return a - b;
+            },
+            multiplicar: function (a, b) {
+                return a * b;
+            },
 
-// Chamando os métodos
-console.log(calculadora.somar(5, 3, 1)); // 8
-console.log(calculadora.subtrair(10, 4)); // 6
-console.log(calculadora.multiplicar(5, 4)); // 20
+        };
+
+        // Chamando os métodos
+        console.log(calculadora.somar(5, 3, 1)); // 8
+        console.log(calculadora.subtrair(10, 4)); // 6
+        console.log(calculadora.multiplicar(5, 4)); // 20
+
+let nota = 105;
+
+if (nota >= 90) {
+    console.log("Conceito A");
+} else if (nota >= 80) {
+    console.log("Conceito B");
+} else if (nota >= 70) {
+    console.log("Conceito C");
+} else {
+    console.log("Reprovado");
+}
+
+let idade = 15;
+let possuiCarteira = true;
+
+if (idade >= 18 && possuiCarteira) {
+    console.log("Você pode dirigir.");
+} else {
+    console.log("Você não pode dirigir.");
+}
+
+if (idade >= 18 || possuiCarteira) {
+    console.log("Você pode dirigir.");
+} else {
+    console.log("Você não pode dirigir.");
+}
+
     </script>
-
-
 
 </body>
 
