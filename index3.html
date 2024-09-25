@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let frutas = ["maçã", "banana", "laranja"];
+
+        // Adicionando elementos
+
+        frutas.push("kiwi");
+        console.log(frutas);  // vai ser adicionado o kiwi ao final da lista
+
+        // Renovando o último elemento
+
+        let frutaRemovida = frutas.pop();
+        console.log(frutaRemovida); // kiwi
+        console.log(frutas); // [maçã, banana, laranja]
+
+
+        // Removendo o primeiro elemento
+        let primeiraFruta = frutas.shift();
+        console.log(primeiraFruta); //"maça"
+        console.log(frutas); // [banana, laranja]
+
+        // Encontrando o índice de um elemento
+        let índice = frutas.indexOf("laranja");
+        console.log(índice); // 1
+
+        let indiceInexistente = frutas.indexOf("maçã");
+        console.log(indiceInexistente); // -1 (não existe no array)
+
+        // Removendo e adicionando elementos (substituindo)
+
+        frutas.splice(1, 1, "manga", "coco"); // Remove 1 elemnto na posição 1 e adiciona "manga" e "coco"
+        console.log(frutas); // ['banana', 'manga', 'coco']
+
+    </script>
+</body>
+
+</html>

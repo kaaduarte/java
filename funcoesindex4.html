@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Definindo uma funçao
+
+        function somar(a, b) {
+            return a + b;
+        }
+
+        // Chamando a função
+
+        let resultado = somar(5, 3);
+        console.log(resultado); //8
+
+        // Função anônima e atribuição a uma variável
+
+        let multiplicar = function (x, y) {
+            return x * y;
+        };
+
+        // Chamando a função anônima
+
+        console.log(multiplicar(4, 2)); //8
+
+        // função de seta (arrow function)
+
+        const subtrair = (a, b) => a - b;
+        console.log(subtrair(10, 4)); // 6
+
+        let carro =
+        {
+
+            marca: "Toyota",
+            modelo: "Corolla",
+            ano: 2020,
+// Método para exibir informações do carro
+exibirInfo: function () {
+    return`${this.marca} ${this.modelo} - Ano: ${this.ano}`;
+}
+        };
+
+        //Chamando o método
+        console.log(carro.exibirInfo()); // "Toyota Corolla - Ano:2020"
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
