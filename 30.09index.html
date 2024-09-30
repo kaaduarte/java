@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let idade = 16;
+        let resultado = (idade >= 18) ? "Maior de idade" : "Menor de idade";
+        console.log(resultado); //"Menor de idade"
+
+        let diaDaSemana = 5;
+
+        switch (diaDaSemana) {
+            case 1:
+                console.log("Domingo");
+                break;
+            case 2:
+                console.log("Segunda-Feira");
+                break;
+            case 3:
+                console.log("Terça-Feira");
+                break;
+            case 4:
+                console.log("Quarta-Feira");
+                break;
+            case 5:
+                console.log("Quinta-Feira");
+                break;
+            case 6:
+                console.log("Sexta-Feira");
+                break;
+            case 7:
+                console.log("Sábado");
+                break;
+            default:
+                console.log("Dia Inválido");
+        }
+
+        let frutas = ["maçã", "\"banana\"", "laranja"];
+        frutas.push("kiwi");
+        console.log(frutas.length)
+
+        for (let i = 0; i < frutas.length; i++) {
+            console.log(frutas[i]);
+        }
+
+        let pessoa = {
+            nome: "Carlos",
+
+            idade: 30,
+            cidade: "São Paulo"
+        };
+
+        for (let chave in pessoa) {
+            console.log(`${chave}: ${pessoa[chave]}`);
+        }
+
+        let fruta = ["maçã", "banana", "laranja"];
+
+        for (let alimento of fruta) {
+            console.log(alimento);
+        }
+
+
+        let contador = 0;
+        while (contador < 5) {
+            console.log(contador);
+            contador++;
+        }
+
+        let economista = 5;
+
+        do {
+            console.log(economista);
+            economista++;
+        } while (economista < 5);
+
+        let entregador = 0;
+        
+        do {
+            console.log(entregador);
+            console.log("oiii")
+            entregador++;
+        } while (entregador < 0);
+
+        while (entregador < 3) {
+            console.log(entregador);
+            console.log('como vai?')
+            entregador++;
+        }
+
+    </script>
+</body>
+
+</html>
