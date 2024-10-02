@@ -9,31 +9,32 @@
 
 <body>
     <script>
-        function fazerDownload() {
+        async function fazerDownload() {
             return new Promise(function (resolve, reject) {
-                // simula um atraso de 2 segundos para o download
                 setTimeout(function () {
-                    const sucesso = false; // Altere para falso para simular falha no download
+                    const sucesso = false; // altere para false para simular falha do download
 
                     if (sucesso) {
-                        resolve("Download concluído com sucesso"); // Transmita para o estado Cumprida
+                        resolve("Download concluído com sucesso!"); // transita para o estado cumprida
                     } else {
-                        reject("Falha no download"); // Transmita para o estado Rejeitada
+                        reject("Falha no download."); // transita para o estado rejeitado
                     }
-                }, 2000); // Espera 2 segundos
+                }, 2000); // espera 2 segundos
             });
         }
 
-        // Usando a promise
-        fazerDownload()
-            .then(function (mensagem) {
-                console.log(mensagem); // Exibe: Donwload concluído com sucesso!
-            })
-            .catch(function (erro) {
+        async function executarDownload() {
+            try {
+                const mensagem = await fazerDownload(); // espera o download ser concluído
+                console.log(mensagem); // Exibe: Download concluído com sucesso!
+            } catch (erro) {
                 console.error(erro); // Exibe: Falha no download.
-            });
+            }
+            }
+
+            //Chamando a função assíncrona
+            executarDownload();
 
     </script>
 </body>
-
 </html>
