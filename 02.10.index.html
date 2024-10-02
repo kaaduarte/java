@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Função retorno
+        function exibirMensagem() {
+            alert("Olá! Esta é uma mensagem de exemplo.");
+        }
+
+        //Chamando a função
+        exibirMensagem();
+
+
+        //função com retorno
+        function somar(a, b) {
+            return a + b; // retorna a soma dos dois parâmetros
+        }
+
+        // chamando a função e armazenando o resultado
+        const resultado = somar(5, 3);
+        console.log("A soma é:", resultado); // exibe: a soma é: 8
+
+
+        function calcularArea(largura, altura) {
+            const area = largura * altura; // variável 'area' está no escopo da função
+            return area;
+        }
+
+        console.log(calcularArea(2.5, 10)); //exibe: 50
+
+        // console.log(area); // erro area não está definida
+
+        function verificarNumero(num) {
+            if (num % 2 === 0) {
+                // declarações dentro do bloco 'if'
+                let resultado = 'O número é par.'; // 'resultado' é acessível apenas dentro deste bloco
+                console.log(resultados); // exibe: o número é par
+            } else {
+                let resultado = 'O número é ímpar'; // 'resultado' neste bloco é diferente
+                console.log(resultados); // exibe: o número é ímpar
+            }
+
+            //aqui, o resultado não está definido, pois está fora do escopo dos blocos
+           
+            console.log(resultados); // erro: resultado não está definido
+        }
+
+        // chamando a função
+        verificarNumero(4); // saída: o número é par
+        verificarNumero(7); // saída: o número é ímpar
+
+    </script>
+</body>
+
+</html>
