@@ -8,6 +8,31 @@
 </head>
 
 <body>
-    
+    <script>
+        // função que simula a verificação da disponibilidade de um produto
+        function verificarProdutoDisponivel() {
+            return new Promise(function (resolve, reject) {
+                var produtoDisponivel = false; // altere para false para simular produto não disponível
+
+                // simula um atraso de 1 segundo
+                setTimeout(function () {
+                    if (produtoDisponivel) {
+                        resolve("Produto está disponível"); // produto disponível
+                    } else {
+                        reject("Produto não disponível"); // produto não disponível
+                    }
+                }, 1000); // espera 1 segundo
+            });
+        }
+
+        // usando a promise
+        verificarProdutoDisponivel().then(function (mensagem) {
+            console.log(mensagem); // exibe: produto está disponível!
+        }).catch(function (erro) {
+            console.error(erro); // exibe: produto não disponível.
+        });
+
+    </script>
 </body>
+
 </html>
